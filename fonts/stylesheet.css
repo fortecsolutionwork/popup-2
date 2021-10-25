@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Futura LT';
+    src: url('FuturaLT-Heavy.eot');
+    src: url('FuturaLT-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('FuturaLT-Heavy.woff2') format('woff2'),
+        url('FuturaLT-Heavy.woff') format('woff'),
+        url('FuturaLT-Heavy.ttf') format('truetype'),
+        url('FuturaLT-Heavy.svg#FuturaLT-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura LT';
+    src: url('FuturaLT-Condensed.eot');
+    src: url('FuturaLT-Condensed.eot?#iefix') format('embedded-opentype'),
+        url('FuturaLT-Condensed.woff2') format('woff2'),
+        url('FuturaLT-Condensed.woff') format('woff'),
+        url('FuturaLT-Condensed.ttf') format('truetype'),
+        url('FuturaLT-Condensed.svg#FuturaLT-Condensed') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura LT';
+    src: url('FuturaLT.eot');
+    src: url('FuturaLT.eot?#iefix') format('embedded-opentype'),
+        url('FuturaLT.woff2') format('woff2'),
+        url('FuturaLT.woff') format('woff'),
+        url('FuturaLT.ttf') format('truetype'),
+        url('FuturaLT.svg#FuturaLT') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura LT';
+    src: url('FuturaLT-Oblique.eot');
+    src: url('FuturaLT-Oblique.eot?#iefix') format('embedded-opentype'),
+        url('FuturaLT-Oblique.woff2') format('woff2'),
+        url('FuturaLT-Oblique.woff') format('woff'),
+        url('FuturaLT-Oblique.ttf') format('truetype'),
+        url('FuturaLT-Oblique.svg#FuturaLT-Oblique') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura LT';
+    src: url('FuturaLT-Bold.eot');
+    src: url('FuturaLT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('FuturaLT-Bold.woff2') format('woff2'),
+        url('FuturaLT-Bold.woff') format('woff'),
+        url('FuturaLT-Bold.ttf') format('truetype'),
+        url('FuturaLT-Bold.svg#FuturaLT-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

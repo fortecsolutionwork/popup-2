@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: noen;
+}
+a:hover,
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: url("images/bg.jpg");
+}
+
+/* popup open btn */
+.buynow {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  background-color: #8b00f1;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  padding: 12px 0;
+  text-align: center;
+  display: block;
+  width: 150px;
+  border: none;
+  cursor: pointer;
+}
+
+.popup {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+.popup.show {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.popup_wrapper {
+  max-width: 72.65625vw;
+  margin: 0 auto;
+  display: flex;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.33);
+  border-radius: 53px;
+  background: #fff;
+  transition: all 0.3s linear;
+  visibility: hidden;
+  transform: translateY(-100%);
+  max-height: 90vh;
+}
+.popup.show .popup_wrapper {
+  visibility: visible;
+  transform: translateY(0);
+}
+.popup_wrapper .left-side {
+  padding: 4.166666666666667vw 3.6458333333333335vw 5.885416666666667vw
+    4.010416666666667vw;
+}
+.popup_wrapper .right-side img {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 0 53px 53px 0;
+}
+.popup_wrapper .col {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.popup .heading {
+  font-family: "Futura LT";
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 1em;
+}
+.popup .title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.55em;
+  max-width: 90%;
+  margin-bottom: 3.6458333333333335vw;
+  color: #505050;
+  margin-top: 15px;
+}
+.popup select option {
+  font-family: "Montserrat", sans-serif;
+}
+.popup_wrapper .left-side select {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  border: 2px solid #7f8da0;
+  padding: 20px 15px 20px 25px;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: #a4a4af;
+  -webkit-appearance: none;
+}
+.select-wrapper {
+  position: relative;
+}
+.select-wrapper::before {
+  content: "";
+  position: absolute;
+  right: 15px;
+  background: url("images/disable-select-icon.png");
+  width: 25px;
+  height: 24px;
+  background-repeat: no-repeat;
+  top: 47%;
+  transform: translateY(-50%);
+}
+.select-wrapper.active::before {
+  background: url("images/select-icon.png");
+  background-repeat: no-repeat;
+}
+.select-wrapper.active select {
+  border-color: #8b00f1 !important;
+  color: #000000;
+}
+.select-wrapper select:focus-visible,
+.select-wrapper select:focus {
+  outline: none;
+}
+.popup_wrapper .cta-btn {
+  background-color: #8b00f1;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border-radius: 15px;
+  padding: 25px 0;
+  text-align: center;
+  font-size: 23px;
+  display: block;
+  margin-top: 2.6041666666666665vw;
+}
+.home_logo img {
+  text-align: center;
+  display: block;
+  margin: 13.583vh auto 0;
+  max-width: 285px;
+  width: 100%;
+}
+.close_popup {
+  position: absolute;
+  right: 30px;
+  top: 35px;
+  cursor: pointer;
+}
+
+/* media quaries */
+@media (max-width: 1440px) {
+  .popup .heading {
+    font-size: 40px;
+  }
+  .popup .title {
+    font-size: 20px;
+    max-width: 100%;
+  }
+  .popup_wrapper .left-side select {
+    padding: 10px 15px 10px 11px;
+    font-size: 20px;
+  }
+  .popup_wrapper .cta-btn {
+    padding: 15px 0;
+    font-size: 18px;
+  }
+  .home_logo img {
+    width: 50%;
+    margin-top: 9vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .popup_wrapper .cta-btn {
+    padding: 15px 10px;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 768px) {
+  .popup_wrapper {
+    max-width: 91.65625vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .popup_wrapper {
+    flex-direction: column-reverse;
+    max-height: initial;
+    border-radius: 20px;
+  }
+  .popup_wrapper .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .popup_wrapper .right-side img {
+    border-radius: 20px 20px 0 0;
+    max-height: 250px;
+  }
+  .close_popup {
+    right: 15px;
+    top: 15px;
+  }
+  .popup .heading {
+    font-size: 20px;
+  }
+  .popup .title {
+    font-size: 12px;
+    line-height: 1.2em;
+    margin-top: 5px;
+  }
+  .popup_wrapper .left-side select {
+    padding: 8px 15px 8px 11px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-bottom: 12px;
+  }
+  .popup_wrapper .cta-btn {
+    padding: 12px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  .home_logo img {
+    margin: 2.865vh auto 0;
+    max-width: 40%;
+  }
+  .select-wrapper::before,
+  .select-wrapper.active::before {
+    top: 57%;
+    background-size: 60%;
+    right: 0;
+  }
+}
